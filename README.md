@@ -56,6 +56,6 @@ I create this simple project to practice the BEM naming convention and CSS Grid.
 
 ## Author
 
-- Frontend Mentor - [@heion31](https://www.frontendmentor.io/heion31/yourusername)
+- Frontend Mentor - [@heion31](https://www.frontendmentor.io/heion31/heion31)
 - Twitter - [@heion31](https://www.twitter.com/heion31)
 
