@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsl(179, 55%, 47%);;
+    --bright-yellow: hsl(71, 73%, 54%);
+    --dark-yellow: hsl(71, 61%, 48%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --fs: 16px;
+    --fw-normal: 400;
+    --fw-bold: 700;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background: var(--light-gray);
+    font-size: var(--fs);
+    font-weight: var(--fw-normal);
+}
+
+/* GENERAL */
+.container {
+    margin: 15% 10%;
+    background: #fff;
+    border-radius: 1%;
+    overflow: hidden; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card {
+    padding: 7% 5%;
+}
+
+.card--bg-darkcyan {
+    background: var(--dark-cyan);
+}
+
+.card--bg-lightcyan {
+    background: var(--light-cyan);
+}
+
+.card__heading {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-weight: var(--fw-bold);
+}
+
+.card--color-cyan {
+    color: var(--dark-cyan);
+}
+
+.card--color-white {
+    color: var(--light-gray);
+}
+
+
+/* FIRST CARD */
+.card__info1 {
+    font-size: 0.8rem;
+    color: var(--bright-yellow);
+    margin-bottom: 1.2rem;
+}
+
+.card__content {
+    font-size: 0.65rem;
+    color: var(--grayish-blue);
+    line-height: 1.2rem;
+}
+
+/* SECOND CARD */
+.card__price {
+    margin-bottom: 0.4rem;
+}
+
+.price {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.price__number {
+    color: var(--light-gray);
+    font-size: 1.4rem;
+}
+
+.price__month {
+    color: var(--light-gray);
+    opacity: 0.5;
+    font-size: 0.75rem;
+    justify-self: start;
+    align-self: center;
+    margin-left: 3%;
+}
+
+.card__info2 {
+    font-size: 0.7rem;
+    color:var(--light-gray);
+    margin-bottom: 1.3rem;
+}
+
+.card__button {
+    background: var(--bright-yellow);
+    color: hsl(204, 43%, 93%);;
+    width: 100%;
+    padding: 5%;
+    border: 0;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: var(--fw-bold);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+}
+
+.card__button:hover {
+    background: var(--dark-yellow);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    font-size: 0.7rem;
+    margin: 0 10%;
+}
+
+/* THIRD CARD */
+.card__links {
+    color: var(--light-gray);
+    font-size: 0.75rem;
+    opacity: 0.7;
+    margin-bottom: 0.2rem;
+}
+
+
+@media only screen and (min-width: 376px) {
+    body {
+        padding: 10% 5%;
+        overflow: hidden;
+    }
+
+    /* GENERAL */
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .card {
+        padding: 6.5% 5%;
+    }
+
+    .card__heading {
+        font-size: 0.85rem; 
+        margin-bottom: 0.9rem;
+    }
+
+    /* FIRST CARD */
+    .card--grid1 {
+        grid-column: 1 / 3;
+    }
+
+    .card__info1 {
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .card__content {
+        line-height: 1rem;
+    }
+
+    /* SECOND CARD */
+    .card--grid2 {
+        padding: 10%;
+    }
+
+    .card__button {
+        font-size: 0.7rem;
+        padding: 6%;
+    }
+
+    /* THIRD CARD */
+    .card--grid3 {
+        padding: 10%;
+    }
+
+    .card__links {
+        font-size: 0.63rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+    
+}
+
+
