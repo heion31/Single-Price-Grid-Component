@@ -47,7 +47,7 @@ Users should be able to:
 - CSS Grid
 - CSS Variable
 - Mobile-first workflow
-- BEM Naming Convention
+- BEM Syntax
 - Media Queries
 
 ### What I'm doing
